@@ -2,11 +2,161 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Седона</title>
   </head>
+
   <body>
+    <div class="wrapper">
+      <header class="main-header">
+        <nav class="main-navigation">
+          <ul>
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Фото и видео</a></li>
+            <li><a href="#">Карта штата</a></li>
+            <li><a href="catalog.html">Гостиницы</a></li>
+          </ul>
+        </nav>
+        <a href="index.html" class="logo">
+          <img src="http://placehold.it/150x100" width="150" height="100" alt="City of Sedona">
+        </a>
+      </header>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+      <main>
+        <div class="poster">
+          <img src="http://placehold.it/150x100" width="150" height="100" alt="Sedona">
+        </div>
 
+        <div class="short-description">
+          <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </div>
+
+        <div class="features">
+          <div class="features-item is-advantage-1">
+            <span class="features-item-title">
+              Настоящий<br>
+              городок
+            </span>
+            <p>— №1 —</p>
+            <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
+          </div>
+          <div class="features-item-image is-advantage-1"></div>
+
+          <div class="features-item is-offer-1">
+            <span class="features-item-title">
+              Жилье
+            </span>
+            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </div>
+          <div class="features-item is-offer-2">
+            <span class="features-item-title">
+              Еда
+            </span>
+            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </div>
+          <div class="features-item is-offer-3">
+            <span class="features-item-title">
+              Сувениры
+            </span>
+            <p>Не только китайского, но и местного производства!</p>
+          </div>
+
+          <div class="features-item-image is-advantage-2"></div>
+          <div class="features-item is-advantage-2">
+            <span class="features-item-title">
+              Там есть<br>
+              мост дьявола
+            </span>
+            <p>— №2 —</p>
+            <p>Да, по нему можно пройти! если конечно вы осмелитесь</p>
+          </div>
+
+          <div class="features-item is-advantage-3">
+            <span class="features-item-title">
+              Небольшая<br>
+              площадь
+            </span>
+            <p>— №3 —</p>
+            <p>Все достопримечательности находятся очень близко</p>
+          </div>
+          <div class="features-item is-advantage-4">
+            <span class="features-item-title">
+              Красивая<br>
+              дорога
+            </span>
+            <p>— №4 —</p>
+            <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
+          </div>
+          <div class="features-item is-advantage-5">
+            <span class="features-item-title">
+              Мало<br>
+              туристов
+            </span>
+            <p>— №5 —</p>
+            <p>Большинство едет в гранд каньон и толпится там</p>
+          </div>
+        </div>
+
+        <section class="search-hotels">
+          <h2>Заинтересовались?</h2>
+          <p>
+            Укажите предполагаемые даты поездки,<br>
+            и мы покажем вам лучшие предложения гостиниц в Cедоне
+          </p>
+
+          <input id="btn-search-hotels" type="checkbox">
+          <label for="btn-search-hotels">Поиск гостиницы в Седоне</label>
+          <form class="search-hotels-form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="arrival-date">
+              <label for="arrival-date">Дата заезда:</label>
+              <input id="arrival-date" type="text" name="arrival-date">
+              <button class="btn-calendar" id="btn-calendar-arrival" type="button"></button>
+            </div>
+
+            <div class="departure-date">
+              <label for="departure-date">Дата выезда:</label>
+              <input id="departure-date" type="text" name="departure-date">
+              <button class="btn-calendar" id="btn-calendar-departure" type="button"></button>
+            </div>
+
+            <div class="number-persons">
+              <label for="number-adults">Взрослые:</label>
+              <button class="btn-minus" id="btn-minus-adult" type="button">-</button>
+              <input id="number-adults" type="text" name="number-adults" value="2">
+              <button class="btn-plus" id="btn-plus-adult" type="button">+</button>
+
+              <label for="number-childrens">Дети:</label>
+              <button class="btn-minus" id="btn-minus-children" type="button">-</button>
+              <input id="number-childrens" type="text" name="number-childrens" value="0">
+              <button class="btn-plus" id="btn-plus-children" type="button">+</button>
+            </div>
+
+            <button class="btn" type="submit">Найти</button>
+          </form>
+        </section>
+
+        <div class="map">
+          <img src="http://placehold.it/150x100" width="150" height="100" alt="map">
+        </div>
+      </main>
+
+      <footer>
+        <div class="footer-visitsedona">
+          <a href="#">#visitsedona</a>
+        </div>
+        <div class="footer-social">
+          <a class="social-btn social-btn-tw" href="#">Twitter</a>
+          <a class="social-btn social-btn-fb" href="#">Facebook</a>
+          <a class="social-btn social-btn-yt" href="#">YouTube</a>
+        </div>
+
+        <div class="footer-htmlacademy">
+          <span>Website by</span>
+          <a href="#">
+            <img src="http://placehold.it/150x100" width="150" height="100" alt="HTML Academy">
+          </a>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

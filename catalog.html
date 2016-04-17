@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Седона: список гостиниц</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="main-header">
+        <nav class="main-navigation">
+          <ul>
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Фото и видео</a></li>
+            <li><a href="#">Карта штата</a></li>
+            <li><a href="catalog.html">Гостиницы</a></li>
+          </ul>
+        </nav>
+        <a href="index.html" class="logo">
+          <img src="http://placehold.it/150x100" width="150" height="100" alt="City of Sedona">
+        </a>
+      </header>
+
+      <main>
+        <form class="filters" action="https://echo.htmlacademy.ru" method="post">
+          <section class="filters-item">
+            <h4 class="filters-item-title">Инфраструктура</h4>
+
+            <input id="pool" type=checkbox name="pool" checked>
+            <label for="pool">Бассейн</label>
+
+            <input id="parking" type=checkbox name="parking">
+            <label for="parking">Парковка</label>
+
+            <input id="wi-fi" type=checkbox name="wi_fi">
+            <label for="wi-fi">WI-FI</label>
+          </section>
+          <section class="filters-item">
+            <h4 class="filters-item-title">Тип жилья</h4>
+
+            <input id="hotel" type=checkbox name="hotel" checked>
+            <label for="hotel">Гостиница</label>
+
+            <input id="motel" type=checkbox name="motel" checked>
+            <label for="motel">Мотель</label>
+
+            <input id="apartments" type=checkbox name="apartments" checked>
+            <label for="apartments">Апартаменты</label>
+          </section>
+          <section class="filters-item">
+            <h4 class="filters-item-title">Стоимость в сутки(р):</h4>
+
+            <div class="price-range">
+              <input type="text" name="price-min" value="0" data-label="от">
+              <span class="separator"></span>
+              <input type="text" name="price-max" value="3000" data-label="до">
+            </div>
+            <div class="price-range-control range-control">
+              <div class="scala">
+                <div class="selected-range"></div>
+              </div>
+              <div class="toggle min-toggle"></div>
+              <div class="toggle max-toggle"></div>
+            </div>
+          </section>
+
+          <button class="btn-show" type="submit">Показать</button>
+        </form>
+
+        <div class="panel">
+          <div class="found-count">
+            Найдено: 3
+          </div>
+
+          <div class="types-sorts">
+            <span>Сортировка:</span>
+            <ul>
+              <li><a class="sort-by-price is-active" href="#">По цене</a></li>
+              <li><a class="sort-by-type" href="#">По типу</a></li>
+              <li><a class="sort-by-rating" href="#">По рейтингу</a></li>
+            </ul>
+          </div>
+
+          <div class="sort-direction">
+            <a class="sort-asc" href="#"></a>
+            <a class="sort-desc is-active" href="#"></a>
+          </div>
+        </div>
+
+        <div class="hotels">
+          <article class="hotels-item">
+            <img src="http://placehold.it/150x100" width="150" height="100" alt="Amara resort & spa">
+            <div class="hotels-item-data">
+              <h3>Amara resort & spa</h3>
+              <span class="hotels-item-type">Гостиница</span>
+              <span class="hotels-item-price">от 3500 р.</span>
+              <a class="btn hotels-item-detail" href="#">Подробнее</a>
+              <a class="btn hotels-item-book" href="#">Забронировать</a>
+            </div>
+            <div class="hotels-item-rating">
+              <span class="hotels-item-rating-stars stars-4"></span>
+              <span class="hotels-item-rating-value">Рейтинг: 8,5</span>
+            </div>
+          </article>
+          <article class="hotels-item">
+            <img src="http://placehold.it/150x100" width="150" height="100" alt="Desert quail inn">
+            <div class="hotels-item-data">
+              <h3>Desert quail inn</h3>
+              <span class="hotels-item-type">Мотель</span>
+              <span class="hotels-item-price">от 2000 р.</span>
+              <a class="btn hotels-item-detail" href="#">Подробнее</a>
+              <a class="btn hotels-item-book" href="#">Забронировать</a>
+            </div>
+            <div class="hotels-item-rating">
+              <span class="hotels-item-rating-stars stars-2"></span>
+              <span class="hotels-item-rating-value">Рейтинг: 8,9</span>
+            </div>
+          </article>
+          <article class="hotels-item">
+            <img src="http://placehold.it/150x100" width="150" height="100" alt="Villas at poco diablo">
+            <div class="hotels-item-data">
+              <h3>Villas at poco diablo</h3>
+              <span class="hotels-item-type">Апартаменты</span>
+              <span class="hotels-item-price">от 4000 р.</span>
+              <a class="btn hotels-item-detail" href="#">Подробнее</a>
+              <a class="btn hotels-item-book" href="#">Забронировать</a>
+            </div>
+            <div class="hotels-item-rating">
+              <span class="hotels-item-rating-stars stars-3"></span>
+              <span class="hotels-item-rating-value">Рейтинг: 9,2</span>
+            </div>
+          </article>
+        </div>
+      </main>
+
+      <footer>
+        <div class="footer-visitsedona">
+          <a href="#">#visitsedona</a>
+        </div>
+        <div class="footer-social">
+          <a class="social-btn social-btn-tw" href="#">Twitter</a>
+          <a class="social-btn social-btn-fb" href="#">Facebook</a>
+          <a class="social-btn social-btn-yt" href="#">YouTube</a>
+        </div>
+        <div class="footer-htmlacademy">
+          <span>Website by</span>
+          <a href="#">
+            <img src="http://placehold.it/150x100" width="150" height="100" alt="HTML Academy">
+          </a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
