@@ -8,13 +8,13 @@
 
   <body>
     <div class="wrapper">
-      <header class="main-header">
+      <header class="main-header container">
         <nav class="main-navigation">
           <ul>
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
-            <li><a href="#">Карта штата</a></li>
             <li><a href="catalog.html">Гостиницы</a></li>
+            <li><a href="#">Карта штата</a></li>
           </ul>
         </nav>
         <a href="index.html" class="logo">
@@ -23,7 +23,7 @@
       </header>
 
       <main>
-        <form class="filters" action="https://echo.htmlacademy.ru" method="post">
+        <form class="filters container clearfix" action="https://echo.htmlacademy.ru" method="post">
           <section class="filters-item">
             <h4 class="filters-item-title">Инфраструктура</h4>
 
@@ -63,17 +63,18 @@
               <div class="toggle min-toggle"></div>
               <div class="toggle max-toggle"></div>
             </div>
-          </section>
 
-          <button class="btn-show" type="submit">Показать</button>
+            <button class="btn-show" type="submit">Показать</button>
+          </section>
         </form>
 
-        <div class="panel">
-          <div class="found-count">
+
+        <div class="panel container clearfix">
+          <div class="panel-item found-count">
             Найдено: 3
           </div>
 
-          <div class="types-sorts">
+          <div class="panel-item types-sorts">
             <span>Сортировка:</span>
             <ul>
               <li><a class="sort-by-price is-active" href="#">По цене</a></li>
@@ -82,14 +83,14 @@
             </ul>
           </div>
 
-          <div class="sort-direction">
+          <div class="panel-item sort-direction">
             <a class="sort-asc" href="#"></a>
             <a class="sort-desc is-active" href="#"></a>
           </div>
         </div>
 
-        <div class="hotels">
-          <article class="hotels-item">
+        <div class="hotels container">
+          <article class="hotels-item clearfix">
             <img src="img/amara.jpg" width="135" height="90" alt="Amara resort & spa">
             <div class="hotels-item-data">
               <h3>Amara resort & spa</h3>
@@ -103,7 +104,7 @@
               <span class="hotels-item-rating-value">Рейтинг: 8,5</span>
             </div>
           </article>
-          <article class="hotels-item">
+          <article class="hotels-item clearfix">
             <img src="img/desert.jpg" width="135" height="90" alt="Desert quail inn">
             <div class="hotels-item-data">
               <h3>Desert quail inn</h3>
@@ -117,7 +118,7 @@
               <span class="hotels-item-rating-value">Рейтинг: 8,9</span>
             </div>
           </article>
-          <article class="hotels-item">
+          <article class="hotels-item clearfix">
             <img src="img/villas.jpg" width="135" height="90" alt="Villas at poco diablo">
             <div class="hotels-item-data">
               <h3>Villas at poco diablo</h3>
@@ -134,7 +135,7 @@
         </div>
       </main>
 
-      <footer>
+      <footer class="main-footer">
         <div class="footer-visitsedona">
           <a href="#">#visitsedona</a>
         </div>
