@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Седона: список гостиниц</title>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
     <div class="wrapper">
       <header class="main-header container">
-        <nav class="main-navigation">
+        <nav class="main-navigation clearfix">
           <ul>
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
@@ -25,7 +26,7 @@
       <main>
         <form class="filters container clearfix" action="https://echo.htmlacademy.ru" method="post">
           <section class="filters-item">
-            <h4 class="filters-item-title">Инфраструктура</h4>
+            <h4 class="filters-item-title">Инфраструктура:</h4>
 
             <input id="pool" type=checkbox name="pool" checked>
             <label for="pool">Бассейн</label>
@@ -37,7 +38,7 @@
             <label for="wi-fi">WI-FI</label>
           </section>
           <section class="filters-item">
-            <h4 class="filters-item-title">Тип жилья</h4>
+            <h4 class="filters-item-title">Тип жилья:</h4>
 
             <input id="hotel" type=checkbox name="hotel" checked>
             <label for="hotel">Гостиница</label>
@@ -48,15 +49,14 @@
             <input id="apartments" type=checkbox name="apartments" checked>
             <label for="apartments">Апартаменты</label>
           </section>
-          <section class="filters-item">
-            <h4 class="filters-item-title">Стоимость в сутки(р):</h4>
+          <section class="filters-item filter-by-price">
+            <h4 class="filters-item-title">Стоимость в сутки (р):</h4>
 
-            <div class="price-range">
-              <input type="text" name="price-min" value="0" data-label="от">
-              <span class="separator"></span>
-              <input type="text" name="price-max" value="3000" data-label="до">
+            <div class="price-range clearfix">
+              <input type="text" name="price-min" value="от 0">              
+              <input type="text" name="price-max" value="до 3000">
             </div>
-            <div class="price-range-control range-control">
+            <div class="price-range-control range-control clearfix">
               <div class="scala">
                 <div class="selected-range"></div>
               </div>
@@ -89,15 +89,17 @@
           </div>
         </div>
 
-        <div class="hotels container">
+        <div class="hotels">
           <article class="hotels-item clearfix">
             <img src="img/amara.jpg" width="135" height="90" alt="Amara resort & spa">
             <div class="hotels-item-data">
-              <h3>Amara resort & spa</h3>
-              <span class="hotels-item-type">Гостиница</span>
-              <span class="hotels-item-price">от 3500 р.</span>
-              <a class="btn hotels-item-detail" href="#">Подробнее</a>
-              <a class="btn hotels-item-book" href="#">Забронировать</a>
+              <h3 class="hotels-item-name">Amara resort & spa</h3>
+              <div class="hotels-item-info">
+                <span class="hotels-item-type">Гостиница</span>
+                <span class="hotels-item-price">от 3500 р.</span>
+              </div>
+              <a class="btn is-blue hotels-item-detail" href="#">Подробнее</a>
+              <a class="btn is-brown hotels-item-book" href="#">Забронировать</a>
             </div>
             <div class="hotels-item-rating">
               <span class="hotels-item-rating-stars stars-4"></span>
@@ -107,11 +109,13 @@
           <article class="hotels-item clearfix">
             <img src="img/desert.jpg" width="135" height="90" alt="Desert quail inn">
             <div class="hotels-item-data">
-              <h3>Desert quail inn</h3>
-              <span class="hotels-item-type">Мотель</span>
-              <span class="hotels-item-price">от 2000 р.</span>
-              <a class="btn hotels-item-detail" href="#">Подробнее</a>
-              <a class="btn hotels-item-book" href="#">Забронировать</a>
+              <h3 class="hotels-item-name">Desert quail inn</h3>
+              <div class="hotels-item-info">
+                <span class="hotels-item-type">Мотель</span>
+                <span class="hotels-item-price">от 2000 р.</span>
+              </div>
+              <a class="btn is-blue hotels-item-detail" href="#">Подробнее</a>
+              <a class="btn is-brown hotels-item-book" href="#">Забронировать</a>
             </div>
             <div class="hotels-item-rating">
               <span class="hotels-item-rating-stars stars-2"></span>
@@ -121,11 +125,13 @@
           <article class="hotels-item clearfix">
             <img src="img/villas.jpg" width="135" height="90" alt="Villas at poco diablo">
             <div class="hotels-item-data">
-              <h3>Villas at poco diablo</h3>
-              <span class="hotels-item-type">Апартаменты</span>
-              <span class="hotels-item-price">от 4000 р.</span>
-              <a class="btn hotels-item-detail" href="#">Подробнее</a>
-              <a class="btn hotels-item-book" href="#">Забронировать</a>
+              <h3 class="hotels-item-name">Villas at poco diablo</h3>
+              <div class="hotels-item-info">
+                <span class="hotels-item-type">Апартаменты</span>
+                <span class="hotels-item-price">от 4000 р.</span>
+              </div>
+              <a class="btn is-blue hotels-item-detail" href="#">Подробнее</a>
+              <a class="btn is-brown hotels-item-book" href="#">Забронировать</a>
             </div>
             <div class="hotels-item-rating">
               <span class="hotels-item-rating-stars stars-3"></span>
@@ -140,15 +146,13 @@
           <a href="#">#visitsedona</a>
         </div>
         <div class="footer-social">
-          <a class="social-btn social-btn-tw" href="#">Twitter</a>
-          <a class="social-btn social-btn-fb" href="#">Facebook</a>
-          <a class="social-btn social-btn-yt" href="#">YouTube</a>
+          <a class="btn is-blue social-btn social-btn-tw" href="#">Twitter</a>
+          <a class="btn is-blue social-btn social-btn-fb" href="#">Facebook</a>
+          <a class="btn is-blue social-btn social-btn-yt" href="#">YouTube</a>
         </div>
         <div class="footer-htmlacademy">
           <span>Website by</span>
-          <a href="#">
-            <img src="img/html_academy.png" width="113" height="39" alt="HTML Academy">
-          </a>
+          <a class="footer-htmlacademy-logo" href="#" title="HTML Academy"></a>
         </div>
       </footer>
     </div>
