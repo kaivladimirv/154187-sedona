@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Седона: список гостиниц</title>
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
 
@@ -14,7 +15,7 @@
           <ul>
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
-            <li><a href="catalog.html">Гостиницы</a></li>
+            <li class="active"><a>Гостиницы</a></li>
             <li><a href="#">Карта штата</a></li>
           </ul>
         </nav>
@@ -25,7 +26,7 @@
 
       <main>
         <form class="filters container clearfix" action="https://echo.htmlacademy.ru" method="post">
-          <section class="filters-item">
+          <section class="filters-item filters-by-infrastructure">
             <h4 class="filters-item-title">Инфраструктура:</h4>
 
             <input id="pool" type=checkbox name="pool" checked>
@@ -37,7 +38,7 @@
             <input id="wi-fi" type=checkbox name="wi_fi">
             <label for="wi-fi">WI-FI</label>
           </section>
-          <section class="filters-item">
+          <section class="filters-item filters-by-accommodation">
             <h4 class="filters-item-title">Тип жилья:</h4>
 
             <input id="hotel" type=checkbox name="hotel" checked>
@@ -53,8 +54,8 @@
             <h4 class="filters-item-title">Стоимость в сутки (р):</h4>
 
             <div class="price-range clearfix">
-              <input type="text" name="price-min" value="от 0">              
-              <input type="text" name="price-max" value="до 3000">
+              <label class="price-min">от <input type="text" name="price-min" value="0"></label>
+              <label class="price-max">до <input type="text" name="price-max" value="3000"></label>
             </div>
             <div class="price-range-control range-control clearfix">
               <div class="scala">
