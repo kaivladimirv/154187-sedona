@@ -67,7 +67,7 @@
             </div>
           </div>
 
-          <div class="features-row clearfix">            
+          <div class="features-row clearfix">
             <div class="features-item is-advantage-2">
               <p class="features-item-title">
               Там есть<br>
@@ -114,8 +114,8 @@
           </p>
 
           <input id="btn-search-hotels" type="checkbox">
-          <label class="btn is-brown btn-search-hotels" for="btn-search-hotels">Поиск гостиницы в Седоне</label>
-          <form class="search-hotels-form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="btn is-brown btn-search-hotels js-btn-search-hotels" for="btn-search-hotels">Поиск гостиницы в Седоне</label>
+          <form class="search-hotels-form js-search-hotels-form" action="https://echo.htmlacademy.ru" method="post">
             <div class="row arrival-date">
               <label for="arrival-date">Дата заезда:</label>
               <input id="arrival-date" type="text" name="arrival-date" value="24 апреля 2016">
@@ -148,7 +148,7 @@
           </form>
         </section>
 
-        <div class="map"></div>
+        <div id="map" class="map"></div>
       </main>
 
       <footer class="main-footer">
@@ -166,5 +166,9 @@
         </div>
       </footer>
     </div>
+
+    <script src="js/script.js"></script>
+    <script type="text/javascript" charset="utf-8" async
+      src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=jO1TX-UAcyG6jvB4ZtrD5Z6pb-yASi8B&width=100%&height=100%&id=map&lang=ru_RU&sourceType=constructor&scroll=true"></script>
   </body>
 </html>

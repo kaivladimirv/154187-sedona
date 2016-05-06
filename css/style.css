@@ -285,6 +285,9 @@ main {
 }
 
 .search-hotels {
+  position: relative;
+  z-index: 1;
+
   padding-top: 56px;
 
   line-height: 24px;
@@ -391,9 +394,13 @@ main {
 
   overflow: hidden;
 
+  -webkit-transition-property: height, padding-top;
+
   transition-property: height, padding-top;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-in;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
 }
 
 .search-hotels-form .row {
@@ -821,7 +828,9 @@ label[for="number-childrens"] {
 
   speak: none;
 
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+
+          transform: translateY(-50%);
 }
 
 
@@ -880,7 +889,8 @@ label[for="number-childrens"] {
   margin-left: 1px;
 
   background: #ffffff;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .price-range label {
@@ -982,7 +992,9 @@ label[for="number-childrens"] {
 
   cursor: pointer;
 
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+
+          transform: translateX(-50%);
 }
 
 .btn-show:hover {
